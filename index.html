@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Study notes</h1>
+      <p>Notes stay in this browser after you close the tab.</p>
+    </header>
+
+    <form id="note-form">
+      <label>
+        Title
+        <input id="title" name="title" type="text" maxlength="120" required autocomplete="off">
+      </label>
+      <label>
+        Note
+        <textarea id="body" name="body" rows="5" maxlength="4000" required></textarea>
+      </label>
+      <button type="submit">Add note</button>
+    </form>
+
+    <p id="empty" class="empty">No notes yet. The first one you add is saved on this computer.</p>
+    <ul id="notes" class="notes"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
